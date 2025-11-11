@@ -1,18 +1,4 @@
-#!/usr/bin/env python3
-"""
-Minimal‑diff rewrite of the original Azure‑OpenAI benchmarking script so that
-**ONLY** the LLM client is swapped out for **Gemini 2.5 Flash**.  Everything
-else (metrics, prompts, helper functions, CLI, Excel writing, etc.) remains the
-same.
 
-Main structural points:
-• All OpenAI‑specific boot‑strapping is retained but short‑circuited so the rest
-  of the codebase stays untouched.
-• A single top‑level `LLMClient` now wraps the Google GenAI SDK while
-  preserving the same async `chat()` signature used downstream.
-• Metrics dictionaries, templates and business logic live at **module level** –
-  they are **not** nested inside the LLMClient class (fixed indentation).
-"""
 from __future__ import annotations
 
 # ───────── imports (original set retained for diff‑parity) ─────────
@@ -503,3 +489,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
