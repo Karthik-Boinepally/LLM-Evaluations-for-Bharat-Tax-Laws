@@ -91,18 +91,3 @@ Each response is evaluated on a 1-5 scale across six dimensions:
 
 This project is licensed under the MIT License — see the accompanying `LICENSE` file for details.
 
-## Contributing
-
-We welcome contributions from the community. To contribute:
-
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature/your-feature`.
-3. Commit your changes with clear messages: `git commit -m "feat: description"`.
-4. Push to your fork and open a Pull Request against the `main` branch.
-
-Please make sure to:
-- Follow the existing code style and add tests for new functionality when applicable.
-- Keep changes small and focused; one feature or fix per PR.
-- Write clear PR descriptions and link related issues.
-
-For discussions, file issues and tag maintainers. By contributing, you agree that your contributions will be licensed under the project's MIT License.
